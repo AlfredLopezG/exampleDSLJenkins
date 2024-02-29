@@ -1,8 +1,8 @@
  
-job('ejemplo-dsl-job'){
+job('ejemplo-dsl-job-from-github'){
   description('job ejemplo del curso de jenkins')
   scm{
-    git('https://github.com/macloujulian/jenkins.job.parametrizado.git', 'main') { node ->
+    git('https://github.com/AlfredLopezG/exampleDSLJenkins.git', 'main') { node ->
       node / gitConfigName('jenkins')
       node / gitConfigEmail('freddylgjalisco@gmail.com')
     }
